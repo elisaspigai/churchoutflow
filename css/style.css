@@ -345,7 +345,7 @@ section.section {
 	background-image: url(../img/parallax/img2.jpg);
 }
 #testimonials{	
-	background-image: url(../img/parallax/img3.jpg);
+	background: #70B9B0;
 }
 /*===========================
   --- Header & menu ----
