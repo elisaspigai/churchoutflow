@@ -23,6 +23,7 @@ var chart = c3.generate({
     bindto: '#chart',
     padding: {
         right: 20,
+        left: 70
     },
     data: {
     	x:'x',
@@ -69,12 +70,14 @@ var chart = c3.generate({
 
 
     axis: {
-  		y: {
-  			tick:{
-  				format: d3.format(",")
-  			}
-  		}
-	}
+
+        y: {
+    tick: {
+      values: [4000000, 4500000, 5000000, 5500000],
+      format: d3.format(",")
+    }
+  },
+  }
 });
 </script>
 </body>
