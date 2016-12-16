@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+   <!-- Load c3.css -->
+		<link href="css/c3_2.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+
+
+<div id="chart"></div>
+
+
+<!-- Load d3.js and c3.js -->
+<script src="/js/d3.js" charset="utf-8"></script>
+<script src="/js/c3.js"></script>
+<script>
+var chart = c3.generate({
+    data: {
+
+        columns: [
+            ['Evangelical Lutheran Church of Finland', 74],
+            ['Finnish Orthodox Church', 1],
+            ['Other', 2],
+            ['No religious affiliation', 22]
+        ],
+        type : 'pie',
+        onclick: function (d, i) { console.log("onclick", d, i); },
+        onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+        onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+    }
+});
+</script>
+</body>
+
+</html>	
